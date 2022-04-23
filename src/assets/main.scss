@@ -1,0 +1,109 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 117px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 117px;
+}
+
+.h1, h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.h2, h2 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+.block-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.block-list .list-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-list .list-item__left {
+  padding: 0 12px 10px 0;
+}
+
+.block-list .list-item__right {
+  padding: 0 0 10px 12px;
+}
+
+nav a {
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-container {
+  min-height: 20rem;
+}
+
+.static-content {
+  max-width: 800px;
+}
+
+.static-content ul {
+  padding-left: 19px;
+}
+
+@media (max-width: 430px) {
+  nav a {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .h1, h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.card-columns .card {
+  margin: 0.25rem 0.25rem 1.25rem 0.25rem;
+
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 800px) {
+  .card-columns {
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    column-count: 3;
+  }
+}
+
+

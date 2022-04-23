@@ -1,0 +1,396 @@
+{
+  "items": [
+    {
+      "id": "001",
+      "slug": "monster-ui-addressbooks",
+      "title": "Address Books",
+      "description": "SIP-application for Monster UI framework",
+      "features": [
+        "Address books managment"
+      ],
+      "timeText": "February 2018",
+      "previewImage": "/static/portfolio/2018-monster-ui-addressbooks/screen001_preview.png",
+      "images": [
+        "/static/portfolio/2018-monster-ui-addressbooks/screen001.png"
+      ],
+      "tags": [
+        "monster-ui",
+        "addressbooks",
+        "sip",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "002",
+      "slug": "bitcoin-browser-extension",
+      "title": "Bitcoin Browser Extension",
+      "description": "Browser extension for Google Chrome and Firefox.",
+      "features": [
+        "Displays graph of currency rate for the selected period",
+        "Allows you to calculate the price of one currency in another (currency calculator)",
+        "Displays on the icon the current bitcoin rate in one of the 20 currencies of the world"
+      ],
+      "timeText": "May 2017",
+      "previewImage": "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+      "images": [
+        "/static/portfolio/2017-bitcoin-browser-extension/screen001.png",
+        "/static/portfolio/2017-bitcoin-browser-extension/screen002.png",
+        "/static/portfolio/2017-bitcoin-browser-extension/screen003.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "003",
+      "title": "Alfa Bank JBZoo payment module for Joomla 3",
+      "slug": "alfa-bank-jbzoo-payment-module",
+      "description": "Payment module for JBZoo component of CMS Joomla 3",
+      "features": [
+        "Allow to pay in online store via the Alfa Bank"
+      ],
+      "timeText": "July 2016",
+      "previewImage": "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+      "images": [
+        "/static/portfolio/2016-alfabank-jbzoo-payment-module/thumb.jpg",
+        "/static/portfolio/2016-alfabank-jbzoo-payment-module/screen_01.png"
+      ],
+      "tags": [
+        "php",
+        "jbzoo",
+        "joomla",
+        "alfabank",
+        "ecommerce",
+        "module"
+      ]
+    },
+    {
+      "id": "004",
+      "slug": "admin-interface-ecommerce-site",
+      "title": "Admin Interface for ecommerce site",
+      "description": "I made custom user interface for ecommerce site",
+      "features": [
+        "two column view",
+        "tabs orders",
+        "calculate total sum"
+      ],
+      "timeText": "2016",
+      "previewImage": "/static/portfolio/2016-magix-admin-ui/001.png",
+      "images": [
+        "/static/portfolio/2016-magix-admin-ui/001.png"
+      ],
+      "tags": [
+        "yii2",
+        "ecommerce",
+        "php",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "005",
+      "slug": "change-design-ecommerce-site-ocean-krasoty",
+      "title": "Change design of ecommerce site",
+      "description": "Change design of ecommerce site Ocean Krasoty",
+      "features": [],
+      "timeText": "2016",
+      "previewImage": "/static/portfolio/2016-ocean/preview.jpg",
+      "images": [
+        "/static/portfolio/2016-ocean/preview.jpg",
+        "/static/portfolio/2016-ocean/001.png",
+        "/static/portfolio/2016-ocean/002.jpg",
+        "/static/portfolio/2016-ocean/003.jpg"
+      ],
+      "tags": [
+        "netcat",
+        "php",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "006",
+      "slug": "kinopoisk-torrent-search",
+      "title": "Browser extension for search torrents",
+      "description": "This extension adds T-button near title of film in site kinopoisk.ru",
+      "features": [
+        "Fast search torrents"
+      ],
+      "timeText": "2017",
+      "previewImage": "/static/portfolio/2017-kinopoisk-torrent-search/screen.png",
+      "images": [
+        "/static/portfolio/2017-kinopoisk-torrent-search/screen.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "torrent"
+      ],
+      "links": [
+        {
+          "title": "Source code in Github",
+          "href": "https://github.com/vbarkasov/kinopoisk-torrent-search",
+          "icon": ["fab", "github"]
+        },
+        {
+          "title": "This extension in Google Store",
+          "href": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld",
+          "icon": ["fab", "google-play"]
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "slug": "disallow-ads-vk-com",
+      "title": "Disallow ads in site vk.com",
+      "description": "The extension for google chrome, which disallow ads in social network vk.com",
+      "features": [
+        "dissalow ads banners",
+        "dissalow ads posts",
+        "dissalow ads audio"
+      ],
+      "timeText": "2018",
+      "previewImage": "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+      "images": [
+        "/static/portfolio/2018-ubrat-reklamu-vk/screen_001.png",
+        "/static/portfolio/2018-ubrat-reklamu-vk/screen_002.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "vk",
+        "ads"
+      ]
+    },
+    {
+      "id": "009",
+      "slug": "child-products-statistics",
+      "title": "Statistics website of children's goods",
+      "description": "The website with statistical data of children's goods with graphs",
+      "features": [
+        "beautiful graphs",
+        "interactive",
+        "adaptive view",
+        "minimalistic design"
+      ],
+      "timeText": "October 2018",
+      "previewImage": "/static/portfolio/2018-child-products/screen_preview.png",
+      "images": [
+        "/static/portfolio/2018-child-products/screen_001.png",
+        "/static/portfolio/2018-child-products/screen_002.png",
+        "/static/portfolio/2018-child-products/screen_003.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "vuetify",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "links": [
+        {
+          "title": "Demo",
+          "href": "http://childproducts.vbarkasov.com/#/research-result",
+          "icon": ["fas", "fa-external-link-alt"]
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "slug": "vbarkasov-portfolio-site",
+      "title": "Portfolio site",
+      "description": "The portfolio site of web developer",
+      "features": [
+        "fast",
+        "simple",
+        "convenient",
+        "adaptive view",
+        "minimalistic design"
+      ],
+      "timeText": "August 2018",
+      "previewImage": "/static/portfolio/2018-portfolio-site/screen_001.png",
+      "images": [
+        "/static/portfolio/2018-portfolio-site/screen_001.png",
+        "/static/portfolio/2018-portfolio-site/screen_002.png",
+        "/static/portfolio/2018-portfolio-site/screen_003.png",
+        "/static/portfolio/2018-portfolio-site/screen_004.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "links": [
+        {
+          "title": "Source code in Github",
+          "href": "https://github.com/vbarkasov/vbarkasov-portfolio-vue",
+          "icon": ["fab", "github"]
+        }
+      ]
+    },
+    {
+      "id": "011",
+      "slug": "infinity-resources",
+      "title": "Infinity Resources - Workforce management platform",
+      "description": "Tasks included adding new features and fixing bugs.",
+      "features": [
+        "interactive",
+        "adaptive",
+        "minimalistic design"
+      ],
+      "timeText": "2019",
+      "previewImage": "/static/portfolio/2019-infinity-resources/screen_preview.jpg",
+      "images": [
+        "/static/portfolio/2019-infinity-resources/screen_001.png",
+        "/static/portfolio/2019-infinity-resources/screen_002.png",
+        "/static/portfolio/2019-infinity-resources/screen_003.png",
+        "/static/portfolio/2019-infinity-resources/screen_004.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "012",
+      "slug": "joxi-browser-extension",
+      "title": "Joxi - browser extension for creating screenshots from pages",
+      "description": "Tasks included redesigning the extension and adding new functionality",
+      "features": [
+        "taking screenshots from pages",
+        "screenshot editing",
+        "saving screenshots to the cloud and hard drive"
+      ],
+      "timeText": "2020",
+      "previewImage": "/static/portfolio/2020-joxi/screen_preview.png",
+      "images": [
+        "/static/portfolio/2020-joxi/screen_001.png",
+        "/static/portfolio/2020-joxi/screen_002.png",
+        "/static/portfolio/2020-joxi/screen_003.png",
+        "/static/portfolio/2020-joxi/screen_004.png",
+        "/static/portfolio/2020-joxi/screen_005.png",
+        "/static/portfolio/2020-joxi/screen_006.png",
+        "/static/portfolio/2020-joxi/screen_007.png",
+        "/static/portfolio/2020-joxi/screen_008.png",
+        "/static/portfolio/2020-joxi/screen_009.png",
+        "/static/portfolio/2020-joxi/screen_010.png",
+        "/static/portfolio/2020-joxi/screen_011.png"
+      ],
+      "tags": [
+        "chrome",
+        "firefox",
+        "opera",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "joxi",
+        "capture",
+        "screen",
+        "screenshot"
+      ]
+    },
+    {
+      "id": "013",
+      "slug": "cashback-browser-extension",
+      "title": "Cashback extension for browsers",
+      "description": "Cashback service that helps you make profitable purchases on the Internet",
+      "features": [
+        "creates cashback on affilate sites",
+        "shows coupons on affiliate pages",
+        "shows push-notifications",
+        "shows popup with list of affiliate sites",
+        "authorization"
+      ],
+      "timeText": "2019",
+      "previewImage": "/static/portfolio/2019-cashback-extension/screen_preview.jpg",
+      "images": [
+        "/static/portfolio/2019-cashback-extension/screen_001.png",
+        "/static/portfolio/2019-cashback-extension/screen_002.png",
+        "/static/portfolio/2019-cashback-extension/screen_003.png"
+      ],
+      "tags": [
+        "cashback",
+        "chrome",
+        "firefox",
+        "extension",
+        "addon",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "014",
+      "slug": "bitcoin-exchange-service",
+      "title": "Web-service for exchanging currencies and cryptocurrencies",
+      "description": "The service allows you to quickly order the exchange of one currency for another. Exchange amounts are automatically calculated.",
+      "features": [
+        "Always up-to-date exchange rates",
+        "Minimalistic design",
+        "Fast speed",
+        "User-friendly interface"
+      ],
+      "timeText": "2021",
+      "previewImage": "/static/portfolio/2021-bitexchange/001.png",
+      "images": [
+        "/static/portfolio/2021-bitexchange/001.png"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "scss",
+        "bitcoin",
+        "cryptocurrency",
+        "exchange"
+      ]
+    },
+    {
+      "id": "015",
+      "slug": "web-service-ads-telegram",
+      "title": "Web service for manage ads in Telegram",
+      "description": "Participated in the creation web service for manage ads in Telegram channels for administrators and advertisers.",
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2021-admint/001.jpg",
+      "images": [
+        "/static/portfolio/2021-admint/001.jpg",
+        "/static/portfolio/2021-admint/002.jpg",
+        "/static/portfolio/2021-admint/003.jpg",
+        "/static/portfolio/2021-admint/004.jpg",
+        "/static/portfolio/2021-admint/005.jpg",
+        "/static/portfolio/2021-admint/006.jpg"
+      ],
+      "tags": [
+        "vue",
+        "vuex",
+        "javascript",
+        "html",
+        "scss",
+        "telegram",
+        "ads"
+      ]
+    }
+  ]
+}
