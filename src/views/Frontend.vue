@@ -1,9 +1,6 @@
 <template>
 <div>
   <div class="static-content px-4 mx-auto">
-    <vue-headful
-      title="front-end with a Vue.js - Portfolio site of Vladimir Barkasov "
-    />
     <div class="text-center">
       <img class="mb-4 img-fluid rounded" src="/static/img/popeye-vue.png" alt="front-end with vue" />
     </div>
@@ -38,6 +35,7 @@
 </template>
 
 <script>
+// Title: front-end with a Vue.js - Portfolio site of Vladimir Barkasov
 import PortfolioCard from '../components/PortfolioCard.vue'
 import { getPortfolioItemsByTags } from '@/composables/portfolioItems'
 

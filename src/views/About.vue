@@ -1,8 +1,5 @@
 <template>
   <div class="static-content px-4 mx-auto">
-    <vue-headful
-      title="Vladimir Barkasov - About me"
-    />
     <div class="text-center mb-3">
       <h1>About Me</h1>
       <img class="img-fluid rounded" src="/static/img/avatar.jpg" alt="Vladimir Barkasov"/>
@@ -64,6 +61,7 @@
 </template>
 
 <style scoped>
+  /* title: Vladimir Barkasov - About me */
   .static-content {
     max-width: 406px;
   }

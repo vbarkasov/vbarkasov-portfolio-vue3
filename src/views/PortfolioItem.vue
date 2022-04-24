@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="item-block pb-md-4 mx-auto text-center">
-      <vue-headful
-        :title="pageTitle"
-      />
+      <!--div> {{ 'Title: ' + pageTitle }}</div-->
       <h1>{{ item.title }}</h1>
       <p v-html="item.description"></p>
 
