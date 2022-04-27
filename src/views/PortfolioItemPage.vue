@@ -35,17 +35,43 @@
         </router-link>
       </div>
 
-      <swiper :options="swiperOption" v-if="hasMore1images(item)">
-        <swiper-slide v-for="(image, index) in item.images" :key="`fruit-${index}`" class="mb-4">
-          <img :src="image" alt="" class="img-thumbnail item-image"/>
+      <swiper
+        :slidesPerView="1"
+        :pagination="{
+          type: 'fraction'
+        }"
+        :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }"
+        :loop="true"
+        :navigation="true"
+        :modules="swiperModules"
+        class="mySwiper"
+        v-if="hasMore1images(item)"
+      >
+        <swiper-slide
+          v-for="(image, index) in item.images"
+          :key="`fruit-${index}`"
+          class="mb-4"
+        >
+          <img
+            :src="image"
+            alt=""
+            class="img-thumbnail item-image"
+          >
         </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
 
-      <div v-else-if="hasExact1image(item)" class="mb-4">
-          <img :src="item.images[0]" alt="" class="img-thumbnail item-image"/>
+      <div
+        v-else-if="hasExact1image(item)"
+        class="mb-4"
+      >
+        <img
+          :src="item.images[0]"
+          alt=""
+          class="img-thumbnail item-image"
+        >
       </div>
 
       <div>
@@ -56,10 +82,16 @@
 </template>
 
 <script>
-import { onMounted, reactive, computed, watch } from 'vue'
+import { reactive, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { Swiper, SwiperSlide } from 'swiper/vue'
 import { getPortfolioItemBySlug } from '@/composables/portfolioItems'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Pagination, Navigation, Autoplay } from 'swiper'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 export default {
   components: {
@@ -72,31 +104,13 @@ export default {
     })
     const route = useRoute()
 
-    const swiperOption = {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30
-    }
-
     const item = computed(() => {
       return getPortfolioItemBySlug(route.params.itemSlug)
     })
 
-    const pageTitle = computed(() => {
+    /* const pageTitle = computed(() => {
       return item.title + ' - Portfolio of Vladimir Barkasov'
-    })
+    }) */
 
     /* watch('route.params.itemSlug', (slug) => {
       state.slug = slug
@@ -116,7 +130,7 @@ export default {
           item.images.length === 1
     }
 
-    return { swiperOption, state, item, pageTitle, hasExact1image, hasMore1images }
+    return { state, item, hasExact1image, hasMore1images, swiperModules: [ Pagination, Navigation, Autoplay ], }
   }
 }
 </script>
