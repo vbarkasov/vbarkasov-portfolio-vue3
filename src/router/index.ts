@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Portfolio from '@/views/Portfolio.vue'
-import PortfolioItem from '@/views/PortfolioItem.vue'
-import Tags from '@/views/Tags.vue'
-import About from '@/views/About.vue'
-import Contacts from '@/views/Contacts.vue'
-import Extensions from '@/views/Extensions.vue'
-import Frontend from '@/views/Frontend.vue'
+import Portfolio from '@/views/PortfolioPage.vue'
+import PortfolioItem from '@/views/PortfolioItemPage.vue'
+import Tags from '@/views/TagsPage.vue'
+import About from '@/views/AboutPage.vue'
+import Contacts from '@/views/ContactsPage.vue'
+import Extensions from '@/views/ExtensionsPage.vue'
+import Frontend from '@/views/FrontendPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
