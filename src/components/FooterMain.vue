@@ -1,27 +1,33 @@
 <template>
-  <footer class="footer row py-3 px-4">
-    <div class="col-6">
-      <h5 class="text-muted">Contacts</h5>
-      <ul class="block-list">
-        <li class="text-left list-item list-item__left">
-          <a class="vb-icon email hvr-float-shadow" @click.prevent="showPopup" href="">Send email</a>
-        </li>
-        <li v-for="(c, index) in contacts" :key="'contact_' + index" class="text-left list-item">
-          <a :href="c.href" class="vb-icon hvr-float-shadow" target="_blank" :title="c.title" :class="c.iconClass"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <div class="float-right">
-        <h5 class="text-muted">Payment methods</h5>
-        <ul class="block-list">
-          <li v-for="(pm, index) in paymentMethods" :key="'payment_' + index" class="text-left list-item list-item__right">
-            <a :href="pm.href" class="vb-icon hvr-float-shadow" target="_blank" :title="pm.title" :class="pm.iconClass"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <v-container fluid class="footer">
+    <v-row justify="center" class="py-3 px-4">
+      <v-col>
+        <h5 class="text-muted text-center">Contacts</h5>
+        <div class="d-flex justify-space-around">
+          <ul class="block-list">
+            <li class="text-left list-item list-item__left">
+              <a class="vb-icon email hvr-float-shadow" @click.prevent="showPopup" href="">Send email</a>
+            </li>
+            <li v-for="(c, index) in contacts" :key="'contact_' + index" class="text-left list-item">
+              <a :href="c.href" class="vb-icon hvr-float-shadow" target="_blank" :title="c.title" :class="c.iconClass"></a>
+            </li>
+          </ul>
+        </div>
+        <!--    <div class="col-6">
+              <div class="float-right">
+                <h5 class="text-muted">Payment methods</h5>
+                <ul class="block-list">
+                  <li v-for="(pm, index) in paymentMethods" :key="'payment_' + index" class="text-left list-item list-item__right">
+                    <a :href="pm.href" class="vb-icon hvr-float-shadow" target="_blank" :title="pm.title" :class="pm.iconClass"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>-->
+      </v-col>
+    </v-row>
+  </v-container>
+
+
 </template>
 
 <script>

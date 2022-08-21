@@ -1,10 +1,10 @@
 <template>
-  <nav class="my-2 my-md-0 mr-md-3 text-center">
+  <nav class="header-menu my-2 my-md-0 mr-md-3 text-center">
     <router-link
       v-for="(item, index) in menuItems"
       :to="item.href"
       @click.prevent="scrollToTop"
-      class="p-2 text-dark"
+      class="header-menu__item text-dark px-2 py-0 py-md-2"
       :key="`top-menu-link-${index}`"
     >
       {{ item.title }}
@@ -48,3 +48,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .header-menu {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.8);
+    z-index: 5;
+  }
+
+  .header-menu__item {
+    font-weight: bold;
+  }
+</style>

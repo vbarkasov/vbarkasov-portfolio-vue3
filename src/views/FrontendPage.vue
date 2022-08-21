@@ -25,7 +25,7 @@
         </ul>
       </div>
       <h2 class="text-center">Examples:</h2>
-      <div class="portfolio-list two-columns card-columns px-6">
+      <div class="portfolio-list two-columns card-columns px-0 px-xs-6">
         <portfolio-card
           v-for="item in portfolioItems"
           v-bind:item="item"
