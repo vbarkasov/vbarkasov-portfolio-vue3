@@ -59,13 +59,17 @@
 <script>
 // Title: Browser Extensions - Portfolio site of Vladimir Barkasov
 import PortfolioCard from '../components/PortfolioCard.vue'
-import { getPortfolioItemsByTags } from '@/composables/portfolioItems'
+import { usePortfolioItems } from '@/composables/portfolioItems'
 
 export default {
   components: {
     PortfolioCard
   },
   setup () {
+    const {
+      getPortfolioItemsByTags
+    } = usePortfolioItems()
+
     const portfolioItems = getPortfolioItemsByTags([
       'extension',
       'addon'

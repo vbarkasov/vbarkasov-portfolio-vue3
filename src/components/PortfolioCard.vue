@@ -2,7 +2,7 @@
   <div class="card" :data-id="item.id">
     <router-link
       :to="{ name: 'PortfolioItem', params: { itemSlug: item.slug }}"
-      v-on:click.native="scrollToTop"
+      @click.native="scrollToTop"
     >
       <img class="card-img-top" :src="item.previewImage" :alt="item.title">
     </router-link>
@@ -24,7 +24,7 @@
       <router-link
         :to="{ name: 'PortfolioItem', params: { itemSlug: item.slug }}"
         class="btn btn-outline-primary"
-        v-on:click.native="scrollToTop"
+        @click.prevent="scrollToTop"
       >
         More info
       </router-link>
@@ -33,18 +33,21 @@
 </template>
 
 <script>
-import { toRef } from 'vue'
-import { scrollToTop } from '@/composables/scroll'
+import { ref } from 'vue'
+import { useScroll } from '@/composables/scroll'
 
 export default {
   props: {
     item: Object
   },
   setup(props) {
-    const item = toRef(props, 'item')
+    const portfolioItem = ref(props.item)
+    const {
+      scrollToTop
+    } = useScroll()
 
     return {
-      item,
+      portfolioItem,
       scrollToTop
     }
   }

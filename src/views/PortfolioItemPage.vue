@@ -84,7 +84,7 @@
 <script>
 import { reactive, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { getPortfolioItemBySlug } from '@/composables/portfolioItems'
+import { usePortfolioItems } from '@/composables/portfolioItems'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Navigation, Autoplay } from 'swiper'
 
@@ -99,6 +99,10 @@ export default {
     SwiperSlide,
   },
   setup () {
+    const {
+      getPortfolioItemBySlug
+    } = usePortfolioItems()
+
     const state = reactive({
       slug: ''
     })

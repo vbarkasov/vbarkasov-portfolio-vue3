@@ -1,18 +1,19 @@
 import { defineStore } from 'pinia'
 
-export const useEmailPopupStore = defineStore({
-  id: 'counter',
+export const useEmailPopupStore = defineStore('counter', {
   state: () => ({
     emailPopupIsShown: false
   }),
   getters: {
-    emailPopupIsShown: (state) => state.emailPopupIsShown
+    getPopupVisibleStatus(state) {
+      return state.emailPopupIsShown
+    }
   },
   actions: {
-    showEmailPopup() {
+    showEmailPopup () {
       this.emailPopupIsShown = true
     },
-    hideEmailPopup() {
+    hideEmailPopup: function () {
       this.emailPopupIsShown = false
     }
   }

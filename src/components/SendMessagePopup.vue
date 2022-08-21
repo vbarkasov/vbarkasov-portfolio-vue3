@@ -5,7 +5,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title">Send message</h2>
-            <button v-on:click.prevent="hidePopup" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button @click.prevent="hidePopup" type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -16,24 +16,36 @@
             method="POST"
           >
             <div class="modal-body">
-                <div class="form-group">
-                  <label for="user-message">Your message *</label>
-                  <textarea v-model="state.message" class="form-control" id="user-message" rows="3" required></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="user-email">Your email for answer *</label>
-                  <input v-model="state.email" type="email" class="form-control" id="user-email" placeholder="name@example.com" required>
-                </div>
-                <div class="form-group">
-                  <label for="user-name">Your name</label>
-                  <input v-model="state.name"  type="text" class="form-control" id="user-name" placeholder="Name">
-                </div>
-<!--                <vue-recaptcha
-                  ref="recaptcha"
-                  :sitekey="state.gRecaptchaSitekey"
-                  @expired="onCaptchaExpired"
-                  @verify="sendMail"
-                ></vue-recaptcha>-->
+              <div class="form-group">
+                <label for="user-message">Your message *</label>
+                <textarea
+                  v-model="state.message"
+                  class="form-control"
+                  id="user-message"
+                  rows="3"
+                  required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="user-email">Your email for answer *</label>
+                <input
+                  v-model="state.email"
+                  type="email"
+                  class="form-control"
+                  id="user-email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="user-name">Your name</label>
+                <input v-model="state.name" type="text" class="form-control" id="user-name" placeholder="Name">
+              </div>
+              <!-- <vue-recaptcha
+                      ref="recaptcha"
+                      :sitekey="state.gRecaptchaSitekey"
+                      @expired="onCaptchaExpired"
+                      @verify="sendMail"
+                   ></vue-recaptcha>-->
               <div v-if="state.userMessage" :class="['alert-' + state.userMessageType]" class="mb-0 mt-3 alert">
                 {{ state.userMessage }}
               </div>
@@ -47,7 +59,12 @@
                   Send
                 </span>
               </button>
-              <button v-on:click.prevent="emailPopupIsShown = false" type="button" class="btn btn-secondary">Cancel</button>
+              <button
+                @click.prevent="emailPopupIsShown = false"
+                type="button"
+                class="btn btn-secondary">
+                Cancel
+              </button>
             </div>
           </form>
         </div>
@@ -88,7 +105,7 @@ export default {
     const hidePopup = () => {
       state.userMessage = ''
       state.userMessageType = ''
-        emailPopup.hideEmailPopup()
+      emailPopup.hideEmailPopup()
     }
 
     const onSubmit = async () => {
@@ -136,16 +153,16 @@ export default {
           'g-recaptcha-response': recaptchaToken
         })
       })
-          .then(response => response.json())
-          .then(() => {
-            state.userMessage = 'The message is sent successfully'
-            state.userMessageType = 'success'
-            state.emailSent = true
-          })
-          .catch(() => {
-            state.userMessage = 'The message is not delivered'
-            state.userMessageType = 'danger'
-          })
+        .then(response => response.json())
+        .then(() => {
+          state.userMessage = 'The message is sent successfully'
+          state.userMessageType = 'success'
+          state.emailSent = true
+        })
+        .catch(() => {
+          state.userMessage = 'The message is not delivered'
+          state.userMessageType = 'danger'
+        })
     }
 
     const onCaptchaExpired = () => {
@@ -174,7 +191,15 @@ export default {
       }
     })
 
-    return { state, showPopup, hidePopup, onSubmit, onCaptchaExpired, sendMail, emailPopupIsShown }
+    return {
+      state,
+      showPopup,
+      hidePopup,
+      onSubmit,
+      onCaptchaExpired,
+      sendMail,
+      emailPopupIsShown
+    }
   }
 }
 </script>

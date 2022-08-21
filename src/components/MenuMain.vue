@@ -13,10 +13,14 @@
 </template>
 
 <script>
-import { scrollToTop } from '@/composables/scroll'
+import { useScroll } from '@/composables/scroll'
 
 export default {
   setup () {
+    const {
+      scrollToTop
+    } = useScroll()
+
     const menuItems = [
       {
         title: 'Portfolio',

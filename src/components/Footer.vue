@@ -4,7 +4,7 @@
       <h5 class="text-muted">Contacts</h5>
       <ul class="block-list">
         <li class="text-left list-item list-item__left">
-          <a class="vb-icon email hvr-float-shadow" v-on:click.prevent="showPopup" href="">Send email</a>
+          <a class="vb-icon email hvr-float-shadow" @click.prevent="showPopup" href="">Send email</a>
         </li>
         <li v-for="(c, index) in contacts" :key="'contact_' + index" class="text-left list-item">
           <a :href="c.href" class="vb-icon hvr-float-shadow" target="_blank" :title="c.title" :class="c.iconClass"></a>

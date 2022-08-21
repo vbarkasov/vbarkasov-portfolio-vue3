@@ -11,13 +11,17 @@
 <script>
 // title: 'Vladimir Barkasov - Portfolio site of front-end developer',
 import PortfolioCard from '../components/PortfolioCard.vue'
-import { getPortfolioItemsByTags } from '@/composables/portfolioItems'
+import { usePortfolioItems } from '@/composables/portfolioItems'
 
 export default {
   components: {
     PortfolioCard
   },
   setup () {
+    const {
+      getPortfolioItemsByTags
+    } = usePortfolioItems()
+
     const portfolioItems = getPortfolioItemsByTags()
     return { portfolioItems }
   }
