@@ -2,12 +2,19 @@
   <div class="card" :data-id="item.id">
     <router-link
       :to="{ name: 'PortfolioItem', params: { itemSlug: item.slug }}"
-      @click.native="scrollToTop"
+      @click.prevent="scrollToTop"
     >
       <img class="card-img-top" :src="item.previewImage" :alt="item.title">
     </router-link>
     <div class="card-body">
-      <h2 class="card-title">{{ item.title }}</h2>
+      <h2 class="card-title">
+        <router-link
+          :to="{ name: 'PortfolioItem', params: { itemSlug: item.slug }}"
+          @click.prevent="scrollToTop"
+        >
+          {{ item.title }}
+        </router-link>
+      </h2>
       <p class="card-text" v-html="item.description"></p>
       <div class="mb-3">
         <router-link

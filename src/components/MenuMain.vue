@@ -3,7 +3,7 @@
     <router-link
       v-for="(item, index) in menuItems"
       :to="item.href"
-      @click.native="scrollToTop"
+      @click.prevent="scrollToTop"
       class="p-2 text-dark"
       :key="`top-menu-link-${index}`"
     >
