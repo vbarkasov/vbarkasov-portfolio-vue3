@@ -10,12 +10,14 @@
       You can see a source code of my projects in <a href="https://github.com/vbarkasov" target="_blank">Github</a>
     </p>
     <h2><strong>My services:</strong></h2>
-    <p>– Development Front-End Apps,<br>
+    <p>
+      – Development Front-End Apps,<br>
       – HTML layout (Figma to web-components)<br>
       – Building Browser Extensions,<br>
       – Creating personal web-sites and ecommerce,<br>
       – Creating jQuery plugins,<br>
-      – Web Design (creating logos, web-sites, cutaways)</p>
+      – Web Design (creating logos, web-sites, cutaways)
+    </p>
     <h2><strong>My base skills:</strong></h2>
     <ul>
       <li>JavaScript (ES6 + Vue + Webpack + Gulp)</li>
@@ -29,7 +31,7 @@
       <li><strong>2016 – now – Freelance</strong> –&nbsp;Front-end Developer
         <ul>
           <li>Creating JS-application</li>
-          <li>Convert Figma design to component layout
+          <li>Convert Figma design to component layout</li>
           <li>Development Browser Extensions</li>
           <li>Creating ecommerce modules</li>
           <li>Modifing existing sites</li>
