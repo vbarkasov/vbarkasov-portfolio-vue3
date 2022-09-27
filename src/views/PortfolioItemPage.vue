@@ -84,9 +84,10 @@
 <script>
 import { reactive, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { usePortfolioItems } from '@/composables/portfolioItems'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Navigation, Autoplay } from 'swiper'
+import { usePortfolioItems } from '@/composables/portfolioItems'
+import { useMeta } from '@/composables/meta'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -103,22 +104,20 @@ export default {
       getPortfolioItemBySlug
     } = usePortfolioItems()
 
+    const {
+      setTitle
+    } = useMeta()
+
     const state = reactive({
       slug: ''
     })
     const route = useRoute()
 
     const item = computed(() => {
-      return getPortfolioItemBySlug(route.params.itemSlug)
+      const itemData = getPortfolioItemBySlug(route.params.itemSlug)
+      setTitle(itemData.title)
+      return itemData
     })
-
-    /* const pageTitle = computed(() => {
-      return item.title + ' - Portfolio of Vladimir Barkasov'
-    }) */
-
-    /* watch('route.params.itemSlug', (slug) => {
-      state.slug = slug
-    }) */
 
     const hasMore1images = (item) => {
       return item &&
@@ -134,7 +133,17 @@ export default {
           item.images.length === 1
     }
 
-    return { state, item, hasExact1image, hasMore1images, swiperModules: [ Pagination, Navigation, Autoplay ], }
+    return {
+      state,
+      item,
+      hasExact1image,
+      hasMore1images,
+      swiperModules: [
+        Pagination,
+        Navigation,
+        Autoplay
+      ]
+    }
   }
 }
 </script>

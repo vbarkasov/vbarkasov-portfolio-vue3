@@ -2,16 +2,16 @@
   <div class="portfolio-list card-columns px-12">
     <portfolio-card
       v-for="item in portfolioItems"
-      v-bind:item="item"
-      v-bind:key="item.id"
+      :item="item"
+      :key="item.id"
     ></portfolio-card>
   </div>
 </template>
 
 <script>
-// title: 'Vladimir Barkasov - Portfolio site of front-end developer',
 import PortfolioCard from '../components/PortfolioCard.vue'
 import { usePortfolioItems } from '@/composables/portfolioItems'
+import { useMeta } from '@/composables/meta'
 
 export default {
   components: {
@@ -21,6 +21,12 @@ export default {
     const {
       getPortfolioItemsByTags
     } = usePortfolioItems()
+
+    const {
+      setTitle
+    } = useMeta()
+
+    setTitle()
 
     const portfolioItems = getPortfolioItemsByTags()
     return { portfolioItems }

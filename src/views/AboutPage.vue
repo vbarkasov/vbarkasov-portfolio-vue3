@@ -60,8 +60,22 @@
   </div>
 </template>
 
+<script>
+import { useMeta } from '@/composables/meta'
+
+export default {
+  title: 'About me',
+  setup () {
+    const {
+      setTitle
+    } = useMeta()
+
+    setTitle('About me')
+  }
+}
+</script>
+
 <style scoped>
-  /* title: Vladimir Barkasov - About me */
   .static-content {
     max-width: 406px;
   }

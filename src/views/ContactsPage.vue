@@ -1,5 +1,5 @@
 <template>
-   <div class="static-content px-4 mx-auto">
+  <div class="static-content px-4 mx-auto">
     <h1 class="text-center">Contacts</h1>
     <address>
       <strong>Telegram: </strong>
@@ -19,11 +19,17 @@
 </template>
 
 <script>
-// Title: Vladimir Barkasov - Contacts
 import { useEmailPopupStore } from '@/stores/emailPopup'
+import { useMeta } from '@/composables/meta'
 
 export default {
   setup() {
+    const {
+      setTitle
+    } = useMeta()
+
+    setTitle('Contacts')
+
     const emailPopup = useEmailPopupStore()
     const showPopup = emailPopup.showEmailPopup
 

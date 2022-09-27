@@ -49,17 +49,17 @@
     <div class="portfolio-list card-columns two-columns mt-5 px-6">
       <PortfolioCard
         v-for="portfolioItem in portfolioItems"
-        v-bind:item="portfolioItem"
-        v-bind:key="portfolioItem.id"
+        :item="portfolioItem"
+        :key="portfolioItem.id"
       ></PortfolioCard>
     </div>
   </div>
 </template>
 
 <script>
-// Title: Browser Extensions - Portfolio site of Vladimir Barkasov
 import PortfolioCard from '../components/PortfolioCard.vue'
 import { usePortfolioItems } from '@/composables/portfolioItems'
+import { useMeta } from '@/composables/meta'
 
 export default {
   components: {
@@ -67,8 +67,14 @@ export default {
   },
   setup () {
     const {
+      setTitle
+    } = useMeta()
+
+    const {
       getPortfolioItemsByTags
     } = usePortfolioItems()
+
+    setTitle('Browser Extensions')
 
     const portfolioItems = getPortfolioItemsByTags([
       'extension',

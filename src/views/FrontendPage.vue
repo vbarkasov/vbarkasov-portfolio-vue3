@@ -28,8 +28,8 @@
       <div class="portfolio-list two-columns card-columns px-0 px-xs-6">
         <portfolio-card
           v-for="item in portfolioItems"
-          v-bind:item="item"
-          v-bind:key="item.id"
+          :item="item"
+          :key="item.id"
         ></portfolio-card>
       </div>
     </div>
@@ -37,9 +37,9 @@
 </template>
 
 <script>
-// Title: front-end with a Vue.js - Portfolio site of Vladimir Barkasov
 import PortfolioCard from '../components/PortfolioCard.vue'
 import { usePortfolioItems } from '@/composables/portfolioItems'
+import { useMeta } from '@/composables/meta'
 
 export default {
   components: {
@@ -49,6 +49,12 @@ export default {
     const {
       getPortfolioItemsByTags
     } = usePortfolioItems()
+
+    const {
+      setTitle
+    } = useMeta()
+
+    setTitle('Front-End Development Projects with Vue.js')
 
     const portfolioItems = getPortfolioItemsByTags(['vue'])
     return { portfolioItems }

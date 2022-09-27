@@ -1,12 +1,11 @@
 <template>
   <div class="px-4">
-    <!--div>{{ 'Title: ' + pageTitle}}</div-->
     <h1>Search results by tag: <span v-for="tag in tags" :key="tag">{{ tag }}</span></h1>
     <div class="portfolio-list card-columns">
       <portfolio-card
         v-for="result in results"
-        v-bind:item="result"
-        v-bind:key="result.id"
+        :item="result"
+        :key="result.id"
       ></portfolio-card>
     </div>
   </div>
@@ -17,23 +16,29 @@ import PortfolioCard from '../components/PortfolioCard.vue'
 import { usePortfolioItems } from '@/composables/portfolioItems'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useMeta } from '@/composables/meta'
 
 export default {
-  props: ['items'],
   components: {
     PortfolioCard
   },
+  props: ['items'],
   setup () {
     const route = useRoute()
     const {
       getPortfolioItemsByTags
     } = usePortfolioItems()
 
+    const {
+      setTitle
+    } = useMeta()
+
     const tags = computed(() => {
       let tags = decodeURIComponent(route.params.tags)
       if (tags) {
         tags = tags.split('&')
       }
+      setTitle('Search results by tag: ' + tags.join(' '))
       return tags
     })
 
@@ -41,11 +46,7 @@ export default {
       return getPortfolioItemsByTags(tags.value)
     })
 
-    const pageTitle = computed (() => {
-      return tags.value.join(' ') + ' - Portfolio site of Vladimir Barkasov'
-    })
-
-    return { results, pageTitle, tags }
+    return { results, tags }
   }
 }
 </script>
