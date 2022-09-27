@@ -4,23 +4,23 @@
       <h1>About Me</h1>
       <img class="img-fluid rounded" src="/static/img/avatar.jpg" alt="Vladimir Barkasov"/>
     </div>
-
     <p>
       <strong>Hello!</strong><br/>
-      I’m a professional front-end developer<br/>
+      I’m a professional Front-End developer<br/>
       You can see a source code of my projects in <a href="https://github.com/vbarkasov" target="_blank">Github</a>
     </p>
     <h2><strong>My services:</strong></h2>
-    <p>– Development JS-applications,<br>
-      – Building browser extensions,<br>
+    <p>– Development Front-End Apps,<br>
+      – HTML layout (Figma to web-components)<br>
+      – Building Browser Extensions,<br>
       – Creating personal web-sites and ecommerce,<br>
       – Creating jQuery plugins,<br>
-      – HTML layout (PSD to HTML) – HTML,CCS<br>
       – Web Design (creating logos, web-sites, cutaways)</p>
     <h2><strong>My base skills:</strong></h2>
     <ul>
       <li>JavaScript (ES6 + Vue + Webpack + Gulp)</li>
-      <li>HTML/CSS (+ SASS)</li>
+      <li>Design Frameworks: Vuetify, Quasar, Element UI, Bootstrap</li>
+      <li>HTML/CSS (+ SASS, SCSS)</li>
       <li>PHP (+ Yii2)</li>
       <li>Python (+ Django)</li>
     </ul>
@@ -29,6 +29,7 @@
       <li><strong>2016 – now – Freelance</strong> –&nbsp;Front-end Developer
         <ul>
           <li>Creating JS-application</li>
+          <li>Convert Figma design to component layout
           <li>Development Browser Extensions</li>
           <li>Creating ecommerce modules</li>
           <li>Modifing existing sites</li>
