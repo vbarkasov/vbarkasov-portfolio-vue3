@@ -1,12 +1,14 @@
 <?php
-$mail_address = ''; // type your target email
+// Type your target email
+$mail_address = '';
+// Type your recaptcha secret
+$recaptcha_secret = '';
+$from_email = '';
+
 $mail_subject = 'Сообщение с сайта ' . $_SERVER['SERVER_NAME'];
 $mail_text = '';
-$recaptcha_secret = ''; // type your recaptcha secret
-
 $rest_json = file_get_contents('php://input');
 $_POST = json_decode($rest_json, true);
-
 
 function add_to_mail_text($title, $value){
     global $mail_text;
@@ -26,12 +28,14 @@ foreach ($inputs as $input){
 }
 
 function send() {
-    global $mail_address, $mail_subject, $mail_text;
-    $headers = 'MIME-Version: 1.0\r\n';
-    $headers .= 'Content-type: text/html; charset=utf-8\r\n';
-    $headers .= 'From: no-reply@'.$_SERVER['SERVER_NAME'].'\r\n';
-    $multipart = $mail_text;
-    $mail = mail($mail_address, $mail_subject, $multipart, $headers);
+    global $mail_address, $mail_subject, $mail_text, $from_email;
+
+    $headers = 'From: ' . $from_email . '\r\n' .
+            'Reply-To: ' . $from_email . '\r\n' .
+            'Content-type: text/html; charset=utf-8' . '\r\n' .
+            'X-Mailer: PHP/' . phpversion();
+
+    $mail = mail($mail_address, $mail_subject, $mail_text, $headers);
 
     header($_SERVER['SERVER_PROTOCOL'].' 200 OK');
     if($mail) {
@@ -50,9 +54,9 @@ if(isset($_POST['g-recaptcha-response'])) {
 
     $result_str = file_get_contents($url, false, stream_context_create(array(
         'http' => array(
-            'method'  => 'POST',
-            'header'  => 'Content-type: application/x-www-form-urlencoded',
-            'content' => http_build_query($params)
+        'method'  => 'POST',
+        'header'  => 'Content-type: application/x-www-form-urlencoded',
+        'content' => http_build_query($params)
         )
     )));
 

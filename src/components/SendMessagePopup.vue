@@ -40,12 +40,6 @@
                 <label for="user-name">Your name</label>
                 <input v-model="state.name" type="text" class="form-control" id="user-name" placeholder="Name">
               </div>
-              <!-- <vue-recaptcha
-                      ref="recaptcha"
-                      :sitekey="state.gRecaptchaSitekey"
-                      @expired="onCaptchaExpired"
-                      @verify="sendMail"
-                   ></vue-recaptcha>-->
               <div v-if="state.userMessage" :class="['alert-' + state.userMessageType]" class="mb-0 mt-3 alert">
                 {{ state.userMessage }}
               </div>
@@ -74,14 +68,13 @@
 </template>
 
 <script>
-import { onMounted, reactive, computed, ref } from 'vue'
+import { reactive, computed } from 'vue'
 import { useReCaptcha } from 'vue-recaptcha-v3'
 import { useEmailPopupStore } from '@/stores/emailPopup'
 
 export default {
   setup () {
     const emailPopup = useEmailPopupStore()
-    const recaptcha = ref(null)
 
     const state = reactive({
       userMessage: '',
@@ -89,7 +82,6 @@ export default {
       message: '',
       email: '',
       name: '',
-      // gRecaptchaSitekey: '',
       emailSent: false
     })
 
@@ -109,28 +101,14 @@ export default {
     }
 
     const onSubmit = async () => {
-      // (optional) Wait until recaptcha has been loaded.
       await recaptchaLoaded()
-      // Execute reCAPTCHA with action "login".
       const token = await executeRecaptcha('login')
-
       if (!token) {
         state.userMessage = 'Please confirm that you are human'
         state.userMessageType = 'danger'
       } else {
         sendMail(token)
       }
-
-      // Do stuff with the received token.
-      /*document.querySelector('[name="g-recaptcha-response"]').click()
-      const el = document.querySelector('[name="g-recaptcha-response"]')*/
-
-      /*if (el.value === '') {
-        state.userMessage = 'Please confirm that you are human'
-        state.userMessageType = 'danger'
-      } else {
-        sendMail(el.value)
-      }*/
     }
 
     const sendMail = (recaptchaToken) => {
@@ -165,19 +143,6 @@ export default {
         })
     }
 
-    const onCaptchaExpired = () => {
-      recaptcha.reset()
-    }
-
-    /*onMounted(() => {
-      const recaptchaScript = document.createElement('script')
-      recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=explicit'
-      recaptchaScript.async = true
-      recaptchaScript.defer = true
-      document.head.appendChild(recaptchaScript)
-      state.emailSent = false
-    })*/
-
     const emailPopupIsShown = computed({
       get() {
         return emailPopup.emailPopupIsShown
@@ -196,7 +161,6 @@ export default {
       showPopup,
       hidePopup,
       onSubmit,
-      onCaptchaExpired,
       sendMail,
       emailPopupIsShown
     }
