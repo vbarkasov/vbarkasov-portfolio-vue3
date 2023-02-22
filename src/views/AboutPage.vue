@@ -7,16 +7,16 @@
     <p>
       <strong>Hello!</strong><br/>
       I’m a professional Front-End developer<br/>
-      You can see a source code of my projects in <a href="https://github.com/vbarkasov" target="_blank">Github</a>
+      You can see a source code of my projects on <a href="https://github.com/vbarkasov" target="_blank">Github</a>
     </p>
     <h2><strong>My services:</strong></h2>
     <p>
       – Development Front-End Apps,<br>
       – HTML layout (Figma to web-components)<br>
       – Building Browser Extensions,<br>
-      – Creating personal web-sites and ecommerce,<br>
+      – Creating personal websites and ecommerce,<br>
       – Creating jQuery plugins,<br>
-      – Web Design (creating logos, web-sites, cutaways)
+      – Web Design (creating logos, websites, cutaways)
     </p>
     <h2><strong>My base skills:</strong></h2>
     <ul>
@@ -33,8 +33,8 @@
           <li>Creating JS-application</li>
           <li>Convert Figma design to component layout</li>
           <li>Development Browser Extensions</li>
-          <li>Creating ecommerce modules</li>
-          <li>Modifing existing sites</li>
+          <li>Creating eCommerce modules</li>
+          <li>Modifying existing sites</li>
           <li>Creating personal sites</li>
         </ul>
       </li>
@@ -52,11 +52,11 @@
           <li>Creating API servers for browser extensions</li>
         </ul>
       </li>
-      <li><strong>2010 – 2012 – Center of Financial Technologies</strong> (CFT, 1500+ employees) –&nbsp;Engeneer-Programmer
+      <li><strong>2010 – 2012 – Center of Financial Technologies</strong> (CFT, 1500+ employees) –&nbsp;Engineer-Programmer
         <ul>
           <li>HTML Layout</li>
           <li>Creating Front-End Applications</li>
-          <li>Modifing existing scripts</li>
+          <li>Modifying existing scripts</li>
         </ul>
       </li>
     </ul>

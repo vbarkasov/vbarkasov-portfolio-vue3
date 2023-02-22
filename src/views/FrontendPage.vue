@@ -7,7 +7,7 @@
       <div>
         <h1 class="text-center">Front-end with Vue.js</h1>
         <p>
-          Do you need create front-end for your site use one of modern front-end frameworks?
+          Do you need to create front-end for your site, use one of modern front-end frameworks?
           Or do you need fast and cool single page application (SPA)?
           Choose <a href="https://vuejs.org/" target="_blank">Vue.js!</a>
         </p>
