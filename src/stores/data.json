@@ -140,12 +140,18 @@
         {
           "title": "Source code in Github",
           "href": "https://github.com/vbarkasov/kinopoisk-torrent-search",
-          "icon": ["fab", "github"]
+          "icon": [
+            "fab",
+            "github"
+          ]
         },
         {
           "title": "This extension in Google Store",
           "href": "https://chrome.google.com/webstore/detail/kinopoisk-torrent-search/idohojlpejpilejggmonkihmmpfclnld",
-          "icon": ["fab", "google-play"]
+          "icon": [
+            "fab",
+            "google-play"
+          ]
         }
       ]
     },
@@ -205,7 +211,10 @@
         {
           "title": "Demo",
           "href": "http://childproducts.vbarkasov.com/#/research-result",
-          "icon": ["fas", "fa-external-link-alt"]
+          "icon": [
+            "fas",
+            "fa-external-link-alt"
+          ]
         }
       ]
     },
@@ -240,7 +249,10 @@
         {
           "title": "Source code in Github",
           "href": "https://github.com/vbarkasov/vbarkasov-portfolio-vue",
-          "icon": ["fab", "github"]
+          "icon": [
+            "fab",
+            "github"
+          ]
         }
       ]
     },
@@ -369,8 +381,8 @@
     {
       "id": "015",
       "slug": "web-service-ads-telegram",
-      "title": "Web service for manage ads in Telegram",
-      "description": "Participated in the creation web service for manage ads in Telegram channels for administrators and advertisers.",
+      "title": "A web service for managing ads in Telegram",
+      "description": "Participated in the creation web service for managing ads in Telegram channels for administrators and advertisers.",
       "features": [],
       "timeText": "2022",
       "previewImage": "/static/portfolio/2021-admint/001.jpg",
@@ -390,6 +402,69 @@
         "scss",
         "telegram",
         "ads"
+      ]
+    },
+    {
+      "id": "016",
+      "slug": "corgi-extension",
+      "title": "Corgi browser extension",
+      "description": "The browser extension allows you to learn foreign words when you surf the internet.",
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-corgi/000.png",
+      "images": [
+        "/static/portfolio/2022-corgi/001.png",
+        "/static/portfolio/2022-corgi/002.png",
+        "/static/portfolio/2022-corgi/003.png",
+        "/static/portfolio/2022-corgi/004.png",
+        "/static/portfolio/2022-corgi/005.png",
+        "/static/portfolio/2022-corgi/006.png",
+        "/static/portfolio/2022-corgi/007.png",
+        "/static/portfolio/2022-corgi/008.png",
+        "/static/portfolio/2022-corgi/009.png",
+        "/static/portfolio/2022-corgi/010.png",
+        "/static/portfolio/2022-corgi/011.png",
+        "/static/portfolio/2022-corgi/012.png",
+        "/static/portfolio/2022-corgi/013.png",
+        "/static/portfolio/2022-corgi/014.png",
+        "/static/portfolio/2022-corgi/015.png"
+      ],
+      "tags": [
+        "chrome",
+        "extension",
+        "javascript",
+        "html",
+        "css",
+        "translate",
+        "corgi",
+        "addon",
+        "browser"
+      ]
+    },
+    {
+      "id": "018",
+      "slug": "crm-chat",
+      "title": "Chat for customer relationship management (CRM)",
+      "description": "Fully featured chat for the CRM",
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-crm-chat/000.png",
+      "images": [
+        "/static/portfolio/2022-crm-chat/001.png",
+        "/static/portfolio/2022-crm-chat/002.png",
+        "/static/portfolio/2022-crm-chat/003.png",
+        "/static/portfolio/2022-crm-chat/004.png",
+        "/static/portfolio/2022-crm-chat/005.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "vuetify",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
       ]
     }
   ]

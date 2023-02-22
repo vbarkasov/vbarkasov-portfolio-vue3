@@ -1,0 +1,28 @@
+{
+  "id": "017",
+  "slug": "crm",
+  "title": "Customer Relationship Management",
+  "description": "Customer Relationship Management (CRM) is a system used to manage customer interactions and data.",
+  "features": [],
+  "timeText": "2022",
+  "previewImage": "/static/portfolio/2022-crm/000.png",
+  "images": [
+    "/static/portfolio/2022-crm/001.png",
+    "/static/portfolio/2022-crm/002.png",
+    "/static/portfolio/2022-crm/003.png",
+    "/static/portfolio/2022-crm/004.png",
+    "/static/portfolio/2022-crm/005.png",
+    "/static/portfolio/2022-crm/006.png",
+    "/static/portfolio/2022-crm/007.png"
+  ],
+  "tags": [
+    "vue",
+    "vue3",
+    "composition-api",
+    "quasar",
+    "crm",
+    "javascript",
+    "html",
+    "css"
+  ]
+},
