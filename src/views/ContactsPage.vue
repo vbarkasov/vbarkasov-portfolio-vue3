@@ -3,14 +3,19 @@
     <h1 class="text-center">Contacts</h1>
     <address>
       <strong>Telegram: </strong>
-      <a href="https://t.me/vbarkasov">@vbarkasov</a>
+      <a
+        href="https://t.me/vbarkasov"
+        target="_blank"
+      >
+        @vbarkasov
+      </a>
     </address>
 
     <address>
       <strong>Email:</strong>
       <a
-        href=""
-        @click.prevent="showPopup"
+        href="mailto:vbarkasov4pub@gmail.com"
+        target="_blank"
       >
         vbarkasov4pub@gmail.com
       </a>

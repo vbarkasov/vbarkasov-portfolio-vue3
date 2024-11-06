@@ -442,6 +442,34 @@
       ]
     },
     {
+      "id": "017",
+      "slug": "crm",
+      "title": "CRM (customer relationship management)",
+      "description": "Implemented the entire client part of the application with the Quasar framework (Vue3)",
+      "features": [],
+      "timeText": "2022",
+      "previewImage": "/static/portfolio/2022-crm/000.png",
+      "images": [
+        "/static/portfolio/2022-crm/001.png",
+        "/static/portfolio/2022-crm/002.png",
+        "/static/portfolio/2022-crm/003.png",
+        "/static/portfolio/2022-crm/004.png",
+        "/static/portfolio/2022-crm/005.png",
+        "/static/portfolio/2022-crm/006.png",
+        "/static/portfolio/2022-crm/007.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "quasar",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
       "id": "018",
       "slug": "crm-chat",
       "title": "Chat for customer relationship management (CRM)",
@@ -460,6 +488,34 @@
         "vue",
         "vue3",
         "vuetify",
+        "composition-api",
+        "crm",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "019",
+      "slug": "online-exhibitions",
+      "title": "Online exhibitions for the HORECA, spa and bath industry",
+      "description": "I implemented most of the client part of the application using the Quasar framework (Vue3 + SSR)",
+      "features": [],
+      "timeText": "2024",
+      "previewImage": "/static/portfolio/2024-fabrika/001.png",
+      "images": [
+        "/static/portfolio/2024-fabrika/002.png",
+        "/static/portfolio/2024-fabrika/003.png",
+        "/static/portfolio/2024-fabrika/004.png",
+        "/static/portfolio/2024-fabrika/005.png",
+        "/static/portfolio/2024-fabrika/006.png",
+        "/static/portfolio/2024-fabrika/007.png"
+      ],
+      "tags": [
+        "vue",
+        "vue3",
+        "quasar",
+        "ssr",
         "composition-api",
         "crm",
         "javascript",

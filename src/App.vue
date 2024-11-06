@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <header-main></header-main>
+    <header-main />
     <v-main class="container-fluid">
       <div class="row mb-3 content-container">
         <div class="col-12 pt-4 pb-0">
@@ -12,21 +12,18 @@
         </div>
       </div>
     </v-main>
-    <footer-main></footer-main>
-    <send-message-popup />
+    <footer-main />
   </v-app>
 </template>
 
 <script>
 import HeaderMain from '@/components/HeaderMain.vue'
 import FooterMain from '@/components/FooterMain.vue'
-import SendMessagePopup from '@/components/SendMessagePopup.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 export default {
   components: {
     HeaderMain,
     FooterMain,
-    SendMessagePopup
   }
 }
 

@@ -2,14 +2,21 @@
   <v-container fluid class="footer">
     <v-row justify="center" class="py-3 px-4">
       <v-col>
-        <h5 class="text-muted text-center">Contacts</h5>
+        <h5 class="text-muted text-center">Contact me</h5>
         <div class="d-flex justify-space-around">
           <ul class="block-list">
-            <li class="text-left list-item list-item__left">
-              <a class="vb-icon email hvr-float-shadow" @click.prevent="showPopup" href="">Send email</a>
-            </li>
-            <li v-for="(c, index) in contacts" :key="'contact_' + index" class="text-left list-item">
-              <a :href="c.href" class="vb-icon hvr-float-shadow" target="_blank" :title="c.title" :class="c.iconClass"></a>
+            <li
+              v-for="(c, index) in contacts"
+              :key="'contact_' + index"
+              class="text-left list-item"
+            >
+              <a
+                :href="c.href"
+                class="vb-icon hvr-float-shadow"
+                target="_blank"
+                :title="c.title"
+                :class="c.iconClass"
+              />
             </li>
           </ul>
         </div>
@@ -26,8 +33,6 @@
       </v-col>
     </v-row>
   </v-container>
-
-
 </template>
 
 <script>

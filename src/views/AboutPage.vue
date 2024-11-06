@@ -11,26 +11,27 @@
     </p>
     <h2><strong>My services:</strong></h2>
     <p>
-      – Development Front-End Apps,<br>
-      – HTML layout (Figma to web-components)<br>
-      – Building Browser Extensions,<br>
+      – Development front-end apps,<br>
+      – HTML layout (Figma to web-components),<br>
+      – Building browser extensions,<br>
       – Creating personal websites and ecommerce,<br>
       – Creating jQuery plugins,<br>
-      – Web Design (creating logos, websites, cutaways)
+      – Web design (creating logos, websites, cutaways).
     </p>
     <h2><strong>My base skills:</strong></h2>
     <ul>
-      <li>JavaScript (ES6 + Vue + Webpack + Gulp)</li>
-      <li>Design Frameworks: Vuetify, Quasar, Element UI, Bootstrap</li>
-      <li>HTML/CSS (+ SASS, SCSS)</li>
-      <li>PHP (+ Yii2)</li>
+      <li>JavaScript</li>
+      <li>JavaScript-frameworks (Vue, React, Angular)</li>
+      <li>UI Frameworks: Quasar, Vuetify, Element UI, Bootstrap</li>
+      <li>HTML/CSS + preprocessors</li>
+      <li>PHP (+ Yii2, Laravel)</li>
       <li>Python (+ Django)</li>
     </ul>
     <h2><strong>My work experience:</strong></h2>
     <ul>
       <li><strong>2016 – now – Freelance</strong> –&nbsp;Front-end Developer
         <ul>
-          <li>Creating JS-application</li>
+          <li>Creating JS-applications</li>
           <li>Convert Figma design to component layout</li>
           <li>Development Browser Extensions</li>
           <li>Creating eCommerce modules</li>
@@ -79,7 +80,15 @@ export default {
 </script>
 
 <style scoped>
-  .static-content {
-    max-width: 406px;
-  }
+ul {
+  padding-bottom: 20px;
+}
+
+ul li ul {
+  margin-top: 5px;
+}
+
+.static-content {
+  max-width: 406px;
+}
 </style>
