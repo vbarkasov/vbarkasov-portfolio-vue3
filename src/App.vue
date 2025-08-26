@@ -6,7 +6,7 @@
         <div class="col-12 pt-4 pb-0">
           <router-view v-slot="{ Component }">
             <transition name="fade" mode="out-in">
-              <component :is="Component"/>
+              <component :is="Component" />
             </transition>
           </router-view>
         </div>
@@ -16,17 +16,10 @@
   </v-app>
 </template>
 
-<script>
+<script setup>
 import HeaderMain from '@/components/HeaderMain.vue'
 import FooterMain from '@/components/FooterMain.vue'
 import 'bootstrap/dist/css/bootstrap.css'
-export default {
-  components: {
-    HeaderMain,
-    FooterMain,
-  }
-}
-
 </script>
 
 <style lang="scss">

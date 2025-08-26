@@ -9,23 +9,85 @@
       I’m a professional Front-End developer<br/>
       You can see a source code of my projects on <a href="https://github.com/vbarkasov" target="_blank">Github</a>
     </p>
-    <h2><strong>My services:</strong></h2>
-    <p>
-      – Development front-end apps,<br>
-      – HTML layout (Figma to web-components),<br>
-      – Building browser extensions,<br>
-      – Creating personal websites and ecommerce,<br>
-      – Creating jQuery plugins,<br>
-      – Web design (creating logos, websites, cutaways).
-    </p>
     <h2><strong>My base skills:</strong></h2>
     <ul>
-      <li>JavaScript</li>
-      <li>JavaScript-frameworks (Vue, React, Angular)</li>
-      <li>UI Frameworks: Quasar, Vuetify, Element UI, Bootstrap</li>
-      <li>HTML/CSS + preprocessors</li>
-      <li>PHP (+ Yii2, Laravel)</li>
-      <li>Python (+ Django)</li>
+      <li>JavaScript (ES6+)</li>
+      <li>TypeScript</li>
+      <li>
+        JavaScript frameworks
+        <ul>
+          <li>Vue (Vue 2, Vue 3, Composition Api, Nuxt 3, Vue Router, Pinia, Vite)</li>
+          <li>React (Redux, </li>
+          <li>Angular</li>
+        </ul>
+      </li>
+      <li>
+        UI Frameworks
+        <ul>
+          <li>Quasar (+SSR)</li>
+          <li>Vuetify</li>
+          <li>Element UI</li>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+        </ul>
+      </li>
+      <li>
+        Layout
+        <ul>
+          <li>Figma</li>
+          <li>HTML 5</li>
+          <li>CSS (CSS2, CSS3)</li>
+          <li>CSS preprocessors (SCSS, SASS)</li>
+          <li>Tailwind</li>
+          <li>Bootstrap</li>
+        </ul>
+      </li>
+      <li>
+        Version control
+        <ul>
+          <li>Git (GitLab, GitHub, Bitbucket)</li>
+          <li>Subversion</li>
+        </ul>
+      </li>
+      <li>
+        Task Managers
+        <ul>
+          <li>Trello</li>
+          <li>Jira</li>
+          <li>BaseCamp</li>
+        </ul>
+      </li>
+      <li>
+        Configuration
+        <ul>
+          <li>Docker</li>
+        </ul>
+      </li>
+      <li>
+        End-to-end testing
+        <ul>
+          <li>Playwright</li>
+          <li>Selenium</li>
+        </ul>
+      </li>
+      <ul>
+        AI tools
+        <li>ChatGPT</li>
+        <li>Cursor</li>
+        <li>DeepSeek</li>
+      </ul>
+      <li>
+        Server side
+        <ul>
+          <li>
+            PHP (Laravel, Yii2)
+          </li>
+          <li>
+            Python (Django)
+          </li>
+          <li>RESTful API</li>
+        </ul>
+      </li>
     </ul>
     <h2><strong>My work experience:</strong></h2>
     <ul>
@@ -61,6 +123,16 @@
         </ul>
       </li>
     </ul>
+
+    <h2><strong>My services:</strong></h2>
+    <p>
+      – Development front-end apps,<br>
+      – HTML layout (Figma to web-components),<br>
+      – Building browser extensions,<br>
+      – Creating personal websites and ecommerce,<br>
+      – Creating jQuery plugins,<br>
+      – Web design (creating logos, websites, cutaways).
+    </p>
   </div>
 </template>
 
@@ -81,7 +153,7 @@ export default {
 
 <style scoped>
 ul {
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 ul li ul {
