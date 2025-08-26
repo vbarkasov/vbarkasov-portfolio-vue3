@@ -39,7 +39,7 @@ export default {
         href: '/page/about'
       },
       {
-        title: 'Contact',
+        title: 'Contact me',
         href: '/page/contacts'
       }
     ]

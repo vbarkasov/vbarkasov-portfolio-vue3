@@ -9,17 +9,20 @@
       I’m a professional Front-End developer<br/>
       You can see a source code of my projects on <a href="https://github.com/vbarkasov" target="_blank">Github</a>
     </p>
-    <h2><strong>My base skills:</strong></h2>
+    <h2><strong>My skills:</strong></h2>
     <ul>
       <li>JavaScript (ES6+)</li>
       <li>TypeScript</li>
       <li>
         JavaScript frameworks
         <ul>
-          <li>Vue (Vue 2, Vue 3, Composition Api, Nuxt 3, Vue Router, Pinia, Vite)</li>
-          <li>React (Redux, </li>
+          <li>Vue (Vue 2, Vue 3, Composition Api, Nuxt, Vue Router, Pinia, Vite)</li>
+          <li>React (Redux, Next.js)</li>
           <li>Angular</li>
         </ul>
+      </li>
+      <li>
+        API integration (REST/JSON, axios, fetch)
       </li>
       <li>
         UI Frameworks
@@ -36,10 +39,11 @@
         <ul>
           <li>Figma</li>
           <li>HTML 5</li>
-          <li>CSS (CSS2, CSS3)</li>
+          <li>CSS (CSS2, CSS3, Flexbox/Grid, Responsive, BEM)</li>
           <li>CSS preprocessors (SCSS, SASS)</li>
           <li>Tailwind</li>
           <li>Bootstrap</li>
+          <li>FSD</li>
         </ul>
       </li>
       <li>
@@ -76,16 +80,30 @@
         <li>Cursor</li>
         <li>DeepSeek</li>
       </ul>
+      <ul>
+        Authorization
+        <li>ChatGPT</li>
+        <li>Cursor</li>
+        <li>DeepSeek</li>
+      </ul>
       <li>
         Server side
         <ul>
-          <li>
-            PHP (Laravel, Yii2)
-          </li>
-          <li>
-            Python (Django)
-          </li>
-          <li>RESTful API</li>
+          <li>PHP (Laravel, Yii2)</li>
+          <li>Python (Django)</li>
+          <li>Bash</li>
+          <li>SSR</li>
+          <li>SSG</li>
+        </ul>
+      </li>
+      <li>
+        CMS
+        <ul>
+          <li>Joomla</li>
+          <li>Wordpress</li>
+          <li>Drupal</li>
+          <li>OpenCart</li>
+          <li>ModX</li>
         </ul>
       </li>
     </ul>

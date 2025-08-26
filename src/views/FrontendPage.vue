@@ -19,8 +19,8 @@
           <li>Development speed</li>
           <li>Ease of support</li>
           <li>Huge developer community</li>
-          <li>Availability of ready-made themes and interface elements (I recommend <a href="https://vuetifyjs.com/"
-                                                                                       target="_blank">Vuetify</a>)
+          <li>Availability of ready-made themes and interface elements (I recommend <a href="https://quasar.dev/"
+                                                                                       target="_blank">Quasar</a>)
           </li>
         </ul>
       </div>
