@@ -2,7 +2,11 @@
   <div class="static-content px-4 mx-auto">
     <div class="text-center mb-3">
       <h1>About Me</h1>
-      <img class="img-fluid rounded" src="/static/img/avatar.jpg" alt="Vladimir Barkasov"/>
+      <img
+        class="static-content__avatar img-fluid rounded"
+        src="/static/img/avatar.jpg"
+        alt="Vladimir Barkasov"
+      />
     </div>
     <p>
       <strong>Hello!</strong><br/>
@@ -62,7 +66,7 @@
         </ul>
       </li>
       <li>
-        Configuration
+        Development tools
         <ul>
           <li>Docker</li>
         </ul>
@@ -187,5 +191,8 @@ ul li ul {
 
 .static-content {
   max-width: 406px;
+  &__avatar {
+    max-width: 200px;
+  }
 }
 </style>
